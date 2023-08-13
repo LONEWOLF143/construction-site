@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import backgroundImage from '../assets/bg-img.jpg';
+import { BsArrowRightShort } from 'react-icons/bs'
 import bannerImage from '../assets/CTA-bg.jpg';
 
 const Home = () => {
@@ -43,6 +44,31 @@ const Home = () => {
       </div>
      
 {/* CTA SECTION */}
+<div className='relative  text-grey py-20 my-20 max-w-[800px] mx-auto'>
+      {/* Your image and overlay here */}
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div className='mx-auto text-center'>
+        <div className='w-16 h-2 bg-[#ff702d] text-center mx-auto mb-6'></div>
+          <h2 className='text-2xl md:text-3xl font-semibold mb-2 md:mb-4'>
+            Get Your Free Consultation
+          </h2>
+          <p className='text-sm md:text-base mb-4 md:mb-6'>
+            You can use these sections to highlight the features of heading.
+            Use these paragraphs to focus on the topic you want. Make sure
+            you keep it short and attractive.
+          </p>
+          <button className='bg-[#ff702d] px-[30px] my-7 transition-all duration-300 text-white py-[18px] hover:bg-black inline-flex items-center'>
+            Book An Appointment <BsArrowRightShort className='ml-2' />
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
 
     </div>
   );
