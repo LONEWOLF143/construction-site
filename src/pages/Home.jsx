@@ -5,6 +5,7 @@ import { BsArrowRightShort } from 'react-icons/bs'
 import bannerImage from '../assets/CTA-bg.jpg';
 
 const Home = () => {
+    
   return (
     <div>
       <Hero />
@@ -44,15 +45,16 @@ const Home = () => {
       </div>
      
 {/* CTA SECTION */}
-<div className='relative  text-grey py-20 my-20 max-w-[800px] mx-auto'>
-      {/* Your image and overlay here */}
+<div  className="relative bg-fixed" style={{ backgroundImage: `url(${bannerImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+<div className='overlay absolute top-0 left-0 w-full h-full bg-black opacity-50'></div>
+<div className='relative  text-grey py-20 my-20 max-w-[800px] mx-auto'  >
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='mx-auto text-center'>
         <div className='w-16 h-2 bg-[#ff702d] text-center mx-auto mb-6'></div>
-          <h2 className='text-2xl md:text-3xl font-semibold mb-2 md:mb-4'>
+          <h2 className='text-2xl md:text-3xl font-semibold mb-2 md:mb-4 text-white'>
             Get Your Free Consultation
           </h2>
-          <p className='text-sm md:text-base mb-4 md:mb-6'>
+          <p className='text-sm md:text-base mb-4 md:mb-6 text-white'>
             You can use these sections to highlight the features of heading.
             Use these paragraphs to focus on the topic you want. Make sure
             you keep it short and attractive.
@@ -63,6 +65,36 @@ const Home = () => {
         </div>
       </div>
     </div>
+</div>
+
+{/* our especialisation */}
+ 
+<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20'>
+      <div className='flex flex-col md:flex-row'>
+        <div className='md:w-1/2'>
+          <img src={backgroundImage} alt='Specialist' className='w-full' />
+        </div>
+        <div className='md:w-1/2 md:pl-12'>
+          <h2 className='text-3xl font-semibold mb-4'>Our Specialization</h2>
+          <p className='text-gray-600 mb-6'>
+            We specialize in providing top-notch services in various fields,
+            including:
+          </p>
+          <ul className='list-disc list-inside text-gray-600'>
+            <li>Web Development</li>
+            <li>Mobile App Development</li>
+            <li>UI/UX Design</li>
+            <li>Digital Marketing</li>
+            <li>Graphic Design</li>
+          </ul>
+          <p className='text-gray-600 mt-6'>
+            Our team of experts is dedicated to delivering high-quality and
+            innovative solutions for all your business needs.
+          </p>
+        </div>
+      </div>
+    </div>
+    
 
 
 
