@@ -1,18 +1,28 @@
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
+import Layout from './components/Layout';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Services from './pages/Services';
+
 
 function App() {
 
   return (
-    <>
-     <h1 className="text-3xl font-bold ">
-      Hello world!
-    </h1>
-    <button
-  class="inline-block cursor-pointer rounded-md bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900">
-  Button
-</button>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />}/>
+          <Route path="/services" element={<Services />}/>
+          <Route path="/services" element={<Projects />}/>
+          <Route path="/contact" element={<Contact />}/>
+
+        </Route>
+      </Routes>
+    </Router>
   )
 }
 
