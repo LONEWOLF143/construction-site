@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className="hero min-h-screen relative bg-fixed" style={{backgroundImage: 'url(https://realstate.muhamadun.me/wp-content/uploads/elementor/thumbs/about-img-1-q9gaegqmbxjh31q6y2vs73u9kyzlq0s3k2als3pf6o.jpg)'}}>
+    <div className="hero min-h-screen relative bg-fixed bg-center bg-cover" style={{backgroundImage: 'url(https://realstate.muhamadun.me/wp-content/uploads/elementor/thumbs/about-img-1-q9gaegqmbxjh31q6y2vs73u9kyzlq0s3k2als3pf6o.jpg)'}}>
   <div className="hero-overlay bg-opacity-40"></div>
   <div className="hero-content md:text-center text-neutral-content">
     <div className="max-w-lg">

@@ -53,7 +53,7 @@ const Home = () => {
 
       {/* CTA SECTION */}
       <div
-        className="relative bg-fixed"
+        className="relative bg-fixed bg-center bg-cover"
         style={{
           backgroundImage: `url(${bannerImage})`,
           backgroundSize: 'cover',
@@ -90,7 +90,7 @@ const Home = () => {
           </div>
           {/* especialisation content */}
           <div className="py-7 md:w-1/2 md:pl-12">
-            <h2 className="mb-4 text-3xl font-semibold">Our Specialization</h2>
+            <h2 className="mb-4 text-[2.5rem] font-semibold">Our Specialization</h2>
             <div className="mb-6 h-2 w-16 bg-[#ff702d]"></div>
             <p className="balance mb-6 text-gray-600">
               You can use these sections to highlight the features of heading.
