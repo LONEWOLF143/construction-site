@@ -5,8 +5,12 @@ import { BsArrowRightShort } from 'react-icons/bs';
 import { BiRectangle } from 'react-icons/bi';
 import { BiImages } from 'react-icons/bi';
 import { BiHourglass } from 'react-icons/bi';
+import { BsPencilSquare } from 'react-icons/bs';
+import { FaRegObjectUngroup } from 'react-icons/fa';
+import { FaRegObjectGroup } from 'react-icons/fa';
 import bannerImage from '../assets/CTA-bg.jpg';
 import especialty from '../assets/especialty.jpg';
+import Clients from '../components/Clients';
 
 const Home = () => {
   return (
@@ -82,19 +86,108 @@ const Home = () => {
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row">
           <div className="border-4  border-[#ff702d] md:w-1/2">
-            <img src={especialty} alt="Specialist" className="w-full h-full" />
+            <img src={especialty} alt="Specialist" className="h-full w-full" />
           </div>
           {/* especialisation content */}
-          <div className="md:w-1/2 md:pl-12 py-7">
+          <div className="py-7 md:w-1/2 md:pl-12">
             <h2 className="mb-4 text-3xl font-semibold">Our Specialization</h2>
             <div className="mb-6 h-2 w-16 bg-[#ff702d]"></div>
-            <p className="mb-6 text-gray-600 balance">
-            You can use these sections to highlight the features of heading. Use these paragraphs to focus on the topic you want.
-             Make sure you keep it short and attractive.
+            <p className="balance mb-6 text-gray-600">
+              You can use these sections to highlight the features of heading.
+              Use these paragraphs to focus on the topic you want. Make sure you
+              keep it short and attractive.
             </p>
-
+            {/* widgets */}
+            <div className="grid grid-cols-1 gap-x-2 md:grid-cols-2">
+              <div>
+                <div className="widget-container flex flex-col items-center py-4 md:flex-row md:items-start">
+                  <div className="widget-icon-container md:mr-2">
+                    <BiRectangle className="md:text-[min(5rem, 8vw)] text-4xl text-[#ff702d]" />
+                  </div>
+                  <div className="widget-content flex-center flex-col text-center md:text-left">
+                    <h3 className=" mb-2 text-2xl">
+                      Architecture
+                    </h3>
+                    <p className=" mt-1 balance">
+                      A short description to prove that you are the best.
+                    </p>
+                  </div>
+                </div>
+                <div className="widget-container flex flex-col items-center py-4 md:flex-row md:items-start">
+                  <div className="widget-icon-container md:mr-2">
+                    <BiImages className="md:text-[min(5rem, 8vw)] text-4xl text-[#ff702d]" />
+                  </div>
+                  <div className="widget-content flex-center flex-col text-center md:text-left">
+                    <h3 className=" mb-2 text-2xl">
+                      Exterior Design
+                    </h3>
+                    <p className=" mt-1">
+                      A short description to prove that you are the best.
+                    </p>
+                  </div>
+                </div>
+                <div className="widget-container flex flex-col items-center py-4 md:flex-row md:items-start">
+                  <div className="widget-icon-container md:mr-2">
+                    <BiHourglass className="md:text-[min(5rem, 8vw)] text-4xl text-[#ff702d]" />
+                  </div>
+                  <div className="widget-content flex-center flex-col text-center md:text-left">
+                    <h3 className=" mb-2 text-2xl">
+                      Furniture Design
+                    </h3>
+                    <p className=" mt-1 balance">
+                      A short description to prove that you are the best.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="widget-container flex flex-col items-center py-4 md:flex-row md:items-start">
+                  <div className="widget-icon-container md:mr-2">
+                    <BsPencilSquare className=" text-4xl text-[#ff702d]" />
+                  </div>
+                  <div className="widget-content flex-center flex-col text-center md:text-left">
+                    <h3 className=" mb-2 text-2xl">
+                      Landscape Design
+                    </h3>
+                    <p className=" mt-1">
+                      A short description to prove that you are the best.
+                    </p>
+                  </div>
+                </div>
+                <div className="widget-container flex flex-col items-center py-4 md:flex-row md:items-start">
+                  <div className="widget-icon-container md:mr-2">
+                    <FaRegObjectGroup className="md:text-[min(5rem, 8vw)] text-4xl text-[#ff702d]" />
+                  </div>
+                  <div className="widget-content flex-center flex-col text-center md:text-left">
+                    <h3 className=" mb-2 text-2xl">
+                      Site Planning
+                    </h3>
+                    <p className=" mt-1">
+                      A short description to prove that you are the best.
+                    </p>
+                  </div>
+                </div>
+                <div className="widget-container flex flex-col items-center py-4 md:flex-row md:items-start">
+                  <div className="widget-icon-container md:mr-2">
+                    <FaRegObjectUngroup className="md:text-[min(5rem, 8vw)] text-4xl text-[#ff702d]" />
+                  </div>
+                  <div className="widget-content flex-center flex-col text-center md:text-left">
+                    <h3 className=" mb-2 text-2xl">
+                      Interior Design
+                    </h3>
+                    <p className=" mt-1">
+                      A short description to prove that you are the best.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+      {/* what clients say about us */}
+      <div className='mx-auto max-w-7xl'>
+        <Clients />
       </div>
     </div>
   );
