@@ -83,13 +83,13 @@ const Home = () => {
 
       {/* our especialisation */}
 
-      <div className="mx-auto max-w-7xl  py-20 sm:px-6 lg:px-8">
+      <div className="container mx-auto  py-20 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row">
           <div className="border-4  border-[#ff702d] md:w-1/2">
             <img src={especialty} alt="Specialist" className="h-full w-full" />
           </div>
           {/* especialisation content */}
-          <div className="py-7 md:w-1/2 md:pl-12">
+          <div className=" py-7 md:w-1/2 md:pl-12">
             <h2 className="mb-4 text-[2.5rem] font-semibold">Our Specialization</h2>
             <div className="mb-6 h-2 w-16 bg-[#ff702d]"></div>
             <p className="balance mb-6 text-gray-600">
