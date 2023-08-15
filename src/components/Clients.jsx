@@ -1,5 +1,6 @@
 import React from 'react';
-import testimonial from '../assets/testimonial-image-1.jpg';
+import testimonial from '../assets/mathew.jpg';
+import { FaQuoteLeft } from 'react-icons/fa';
 
 const Clients = () => {
   return (
@@ -17,24 +18,75 @@ const Clients = () => {
             impression.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="w-3/10 relative">
-            <img
-              src={testimonial}
-              alt="Testimonial"
-              className="h-full w-full object-cover grayscale transition duration-300 hover:grayscale-0 md:h-auto"
-            />
-          </div>
-          <div className="w-7/10">
-            <p className="text-gray-600">
-              Distinctive and memorable designs set Construction apart in the
-              real estate industry. Their exceptional expertise shines through
-              in every project.
+        <div>
+            {/* testimonial card one */}
+  <section className="mb-32 text-center md:text-left">
+    <div
+      className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+      <div className="flex flex-wrap items-center">
+        <div className="block w-full shrink-0 grow-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12">
+          <img src={testimonial} alt="Trendy Pants and Shoes"
+            className="w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" />
+        </div>
+        <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 xl:w-8/12">
+          <div className="px-6 py-12 md:px-12">
+            <h2 className="mb-2 text-3xl font-bold text-[#ff702d] dark:text-primary-400">
+            Matthew Fox​
+            </h2>
+            <p className="mb-4 font-semibold">Development Company</p>
+            <p className="mb-6 text-neutral-500 dark:text-neutral-300">
+                <FaQuoteLeft className='mb-2 text-2xl text-[#ff702d]'/>
+            Distinctive and memorable designs set Consruction apart in the real estate industry.
+             Their exceptional expertise shines through in every project
             </p>
-            <p className="mt-4 font-bold text-gray-900">Matthew Fox</p>
-            <p className="text-gray-600">Development Company</p>
+            <ul className="flex justify-center md:justify-start">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960"
+                  className="w-5 text-[#ff702d] dark:text-primary-400">
+                  <path fill="currentColor"
+                    d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960"
+                  className="w-5 text-[#ff702d] dark:text-primary-400">
+                  <path fill="currentColor"
+                    d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960"
+                  className="w-5 text-[#ff702d] dark:text-primary-400">
+                  <path fill="currentColor"
+                    d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960"
+                  className="w-5 text-[#ff702d] dark:text-primary-400">
+                  <path fill="currentColor"
+                    d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                </svg>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960"
+                  className="w-5 text-[#ff702d] dark:text-primary-400">
+                  <path fill="currentColor"
+                    d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                </svg>
+              </li>
+            </ul>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+
+            
+            {/* testimonial card end */}
+         </div>
         <div>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores,
           laudantium.
