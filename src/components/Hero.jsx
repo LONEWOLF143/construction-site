@@ -1,23 +1,29 @@
-import React from 'react'
+import React from 'react';
+import heroImage from '../assets/bg-img.jpg';
 
-const Hero = () => {
+const HeroSection = () => {
   return (
-    <div className="hero min-h-screen relative bg-fixed bg-center bg-cover" style={{backgroundImage: 'url(https://realstate.muhamadun.me/wp-content/uploads/elementor/thumbs/about-img-1-q9gaegqmbxjh31q6y2vs73u9kyzlq0s3k2als3pf6o.jpg)'}}>
-  <div className="hero-overlay bg-opacity-40"></div>
-  <div className="hero-content md:text-center text-neutral-content">
-    <div className="max-w-lg">
-      <h1 className="mb-5 text-5xl font-bold">Broad Vision Honest Service Great Value</h1>
-      <p className="mb-5">Our goal then and now is to provide quality on time projects</p>
-      <div className='flex space-x-2 md:justify-center'>
-      <button className="btn bg-[#ff702d]">Get Free Quote</button>
-      <button className="btn bg-transparent text-white">Get In Touch</button>
+    <div className="relative h-screen">
+      {/* Absolute positioned background image */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `url(${heroImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      ></div>
+      
+      {/* Hero content */}
+      <div className="flex flex-col items-center justify-center h-full z-10">
+        <h1 className="text-4xl md:text-6xl font-bold text-white">Welcome to our Website</h1>
+        <p className="mt-4 text-lg text-white">Discover amazing features and services</p>
+        <button className="mt-6 py-2 px-4 bg-[#ff702d] text-white font-semibold rounded-lg hover:bg-opacity-80 transition-colors">
+          Get Started
+        </button>
       </div>
     </div>
-  </div>
-  {/* especialisation */}
-  
-</div>
-  )
-}
+  );
+};
 
-export default Hero
+export default HeroSection;
